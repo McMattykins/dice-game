@@ -1,8 +1,10 @@
 import Die from "./components/Die"
 import {nanoid} from "nanoid"
 import React from "react"
-// import Confetti from "react-confetti"
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import Confetti from "react-confetti"
 import './style.css'
+
 
 export default function App() {
 
@@ -58,7 +60,7 @@ export default function App() {
 
   return (
     <main>
-      {/* {tenzies && <Confetti />} */}
+      {tenzies && <Confetti />}
       <h1 className="title">Tenzies</h1>
       <p className="instructions">Roll until all dice are the same.
       Click each die to freeze it at its current value between rolls.</p>
